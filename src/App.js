@@ -17,7 +17,7 @@ function App() {
       });
   };
   const deleteTodo = (id) => {
-    setTodos(todos.filter((todo) => todo.id != id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   const addTodo = (task, des) => {
@@ -35,9 +35,9 @@ function App() {
 
   let completeTodo = (e, id) => {
     if (e.target.checked) {
-      setTodos(todos.map((t) => (t.id == id ? { ...t, completed: true } : t)));
+      setTodos(todos.map((t) => (t.id === id ? { ...t, completed: true } : t)));
     } else {
-      setTodos(todos.map((t) => (t.id == id ? { ...t, completed: false } : t)));
+      setTodos(todos.map((t) => (t.id === id ? { ...t, completed: false } : t)));
     }
   };
 
@@ -80,6 +80,7 @@ function App() {
     } else if (filter === 'not_completed') {
       return (titleMatch || descriptionMatch) && !isCompleted;
     }
+    return "";
   });
   useEffect(() => {
     fetchtodo();
