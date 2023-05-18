@@ -8,7 +8,7 @@
 
 body {
   /* background-color: #a459f4; */
-  background-color: #a459f4;
+  background-color: #caf0f8;
   /* height: 100vh; */
   padding: 15px;
   width: 100%;
@@ -16,19 +16,20 @@ body {
   align-items: center;
   justify-content: center;
 }
-.app{
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.app h1{
+ h1 {
   padding: 20px;
   margin: 20px;
-  font-size: x-large;
+  font-size: xx-large;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
 }
 .todo-container {
   width: 600px;
@@ -83,22 +84,16 @@ select {
   border-radius: 10px;
 }
 
-select {
-  width: 50%;
-  margin: 20px 0px 20px 0px;
-  height: 50px;
-}
-
 input:focus,
 select:focus {
-  outline: 1px solid #a459f4;
+  outline: 1px solid #023e8a;
 }
 
 .todo-search form button {
   height: 50px;
   width: 70px;
   padding: 0px 10px 0px 10px;
-  background-color: #a459f4;
+  background-color: #023e8a;
   color: white;
   border: none;
   border-radius: 5px;
@@ -126,7 +121,7 @@ select:focus {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background-color: #a459f4;
+  background-color: #023e8a;
   color: white;
   cursor: pointer;
   display: flex;
@@ -154,6 +149,20 @@ select:focus {
   align-items: center;
   gap: 10px;
 }
+.filter-form{
+  width: 50%;
+  /* margin: 10px 0px; */
+  height: 50px;
+}
+.filter-form select{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  /* padding: 10px; */
+}
+
 .search-form {
   width: 50%;
   margin: 20px 0px 20px 0px;
@@ -168,19 +177,19 @@ select:focus {
   padding: 10px;
 }
 
-.input-check{
+.input-check {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.input-check input{
+.input-check input {
   outline: none;
 }
-.descp{
+.descp {
   color: rgb(144, 139, 139);
 }
 
-.todo-desc{
+.todo-desc {
   display: flex;
   flex-direction: column;
 }
