@@ -22,7 +22,6 @@ function App() {
 
   const addTodo = (task, des) => {
     setTodos([
-      ...todos,
       {
         userId: 1,
         id: parseInt(todos[todos.length - 1].id) + 1,
@@ -30,6 +29,7 @@ function App() {
         description: des,
         completed: false,
       },
+       ...todos,
     ]);
   };
 
