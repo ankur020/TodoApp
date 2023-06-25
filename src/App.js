@@ -21,6 +21,7 @@ function App() {
   };
 
   const addTodo = (task, des) => {
+      ...todos,
     setTodos([
       {
         userId: 1,
@@ -29,7 +30,6 @@ function App() {
         description: des,
         completed: false,
       },
-       ...todos,
     ]);
   };
 
